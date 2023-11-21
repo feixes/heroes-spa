@@ -5,7 +5,7 @@ import { LoginPage } from "../auth"
 import { Navbar } from "../ui"
 import { HeroesRoutes } from "../heroes/routes/HeroesRoutes"
 import { PrivateRoute } from "./PrivateRoute"
-import { PrublicRoute } from "./PublicRoute"
+import { PublicRoute } from "./PublicRoute"
 
 
 
@@ -18,9 +18,9 @@ export const AppRouter = () => {
                 {/* <Route path="login" element={<LoginPage />} /> */}
 
                 <Route path='/login' element={
-                    <PrublicRoute>
+                    <PublicRoute>
                         <LoginPage />
-                    </PrublicRoute>
+                    </PublicRoute>
                 } />
 
                 <Route path="/*" element={
